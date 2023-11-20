@@ -2,11 +2,3 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/*
-/api.mlc.com/help.txt
-/api/mlc.com/bin/*
-/api/mlc.com/obj/*
-/GTA/bin/*
-/GTA/obj/*
-/GTA.Server/bin/*
-/GTA.Server/obj/*
