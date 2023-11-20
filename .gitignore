@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-api.golftopia.com/bin/*
+/api.golftopia.com/.vs/*
+/api.golftopia.com/.config/*
+/api.golftopia.com/bin/*
+/api.golftopia.com/obj/*
