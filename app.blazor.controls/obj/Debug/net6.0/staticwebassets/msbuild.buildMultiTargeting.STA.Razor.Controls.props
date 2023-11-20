@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\STA.Razor.Controls.props" />
+</Project>

@@ -1,0 +1,33 @@
+﻿@using STA.Data.Client.Controllers;
+@inject STA.Data.Client.Context Context;
+@if (this.Context.User?.Person != null) {
+    <h3>@this.Context.User.Person.FirstName @this.Context.User.Person.LastName</h3>
+}
+
+
+<input type="text" @bind="this.credentials.Username" @bind:event="oninput" />
+<input type="password" @bind="this.credentials.Password" @bind:event="oninput" />
+<button @onclick="submit">Login</button>
+@if(this.message != null) {
+    <span style="color:red">@message</span>
+}
+
+@code {
+    public class Credentials {
+        public string Username { get; set; } = default!;
+        public string Password { get; set; } = default!;
+    }
+    private Credentials credentials = new Credentials();
+    private string? message;
+
+
+    public async Task submit() {
+        ProtectedSessionStore
+        if (! await this.Context.Login(this.credentials.Username, this.credentials.Password)) {
+            this.message = "Invalid Username and Password!";
+        }
+        else {
+            this.message = null;
+        }
+    }
+}

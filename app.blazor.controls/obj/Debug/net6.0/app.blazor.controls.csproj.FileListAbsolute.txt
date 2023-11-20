@@ -1,0 +1,5 @@
+C:\github.com\sokinsky\golftopia\app.blazor.controls\obj\Debug\net6.0\app.blazor.controls.csproj.AssemblyReference.cache
+C:\github.com\sokinsky\golftopia\app.blazor.controls\obj\Debug\net6.0\app.blazor.controls.GeneratedMSBuildEditorConfig.editorconfig
+C:\github.com\sokinsky\golftopia\app.blazor.controls\obj\Debug\net6.0\app.blazor.controls.AssemblyInfoInputs.cache
+C:\github.com\sokinsky\golftopia\app.blazor.controls\obj\Debug\net6.0\app.blazor.controls.AssemblyInfo.cs
+C:\github.com\sokinsky\golftopia\app.blazor.controls\obj\Debug\net6.0\app.blazor.controls.csproj.CoreCompileInputs.cache

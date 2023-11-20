@@ -1,0 +1,15 @@
+﻿@inherits Base
+
+<div class="top-row px-4">
+    @if (this.Context.User?.Person != null)
+    {
+        <a href="https://docs.microsoft.com/aspnet/" target="_blank">@Context.User.Person.LastName</a>
+    }
+    else {
+        <a href="https://docs.microsoft.com/aspnet/" target="_blank">Test</a>
+    }
+</div>
+
+@code {
+
+}

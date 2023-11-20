@@ -1,0 +1,6 @@
+{
+ "environment": null,
+ "api": {
+  "url": "https://localhost:44313/api"
+ }
+}

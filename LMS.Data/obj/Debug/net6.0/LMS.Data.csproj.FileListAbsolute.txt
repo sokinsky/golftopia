@@ -1,0 +1,12 @@
+C:\github.com\sokinsky\golftopia\LMS.Data\bin\Debug\net6.0\LMS.Data.deps.json
+C:\github.com\sokinsky\golftopia\LMS.Data\bin\Debug\net6.0\LMS.Data.dll
+C:\github.com\sokinsky\golftopia\LMS.Data\bin\Debug\net6.0\LMS.Data.pdb
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.csproj.AssemblyReference.cache
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.AssemblyInfoInputs.cache
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.AssemblyInfo.cs
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.csproj.CoreCompileInputs.cache
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.dll
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\refint\LMS.Data.dll
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\LMS.Data.pdb
+C:\github.com\sokinsky\golftopia\LMS.Data\obj\Debug\net6.0\ref\LMS.Data.dll

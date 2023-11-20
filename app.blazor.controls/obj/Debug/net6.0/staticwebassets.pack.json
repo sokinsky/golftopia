@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.STA.Razor.Controls.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.STA.Razor.Controls.props",
+      "PackagePath": "build\\STA.Razor.Controls.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.STA.Razor.Controls.props",
+      "PackagePath": "buildMultiTargeting\\STA.Razor.Controls.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.STA.Razor.Controls.props",
+      "PackagePath": "buildTransitive\\STA.Razor.Controls.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,12 @@
+C:\github.com\sokinsky\golftopia\LMS.Services\bin\Debug\net6.0\LMS.Services.deps.json
+C:\github.com\sokinsky\golftopia\LMS.Services\bin\Debug\net6.0\LMS.Services.dll
+C:\github.com\sokinsky\golftopia\LMS.Services\bin\Debug\net6.0\LMS.Services.pdb
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.csproj.AssemblyReference.cache
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.AssemblyInfoInputs.cache
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.AssemblyInfo.cs
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.csproj.CoreCompileInputs.cache
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.dll
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\refint\LMS.Services.dll
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\LMS.Services.pdb
+C:\github.com\sokinsky\golftopia\LMS.Services\obj\Debug\net6.0\ref\LMS.Services.dll

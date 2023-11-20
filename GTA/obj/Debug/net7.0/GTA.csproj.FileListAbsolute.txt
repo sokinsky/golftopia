@@ -1,0 +1,14 @@
+C:\github.com\sokinsky\golftopia\GTA\bin\Debug\net7.0\GTA.deps.json
+C:\github.com\sokinsky\golftopia\GTA\bin\Debug\net7.0\GTA.runtimeconfig.json
+C:\github.com\sokinsky\golftopia\GTA\bin\Debug\net7.0\GTA.dll
+C:\github.com\sokinsky\golftopia\GTA\bin\Debug\net7.0\GTA.pdb
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.csproj.AssemblyReference.cache
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.GeneratedMSBuildEditorConfig.editorconfig
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.AssemblyInfoInputs.cache
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.AssemblyInfo.cs
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.csproj.CoreCompileInputs.cache
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.dll
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\refint\GTA.dll
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.pdb
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\GTA.genruntimeconfig.cache
+C:\github.com\sokinsky\golftopia\GTA\obj\Debug\net7.0\ref\GTA.dll

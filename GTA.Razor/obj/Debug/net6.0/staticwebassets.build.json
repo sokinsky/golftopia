@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "6PzOqpMOLKOEBNxfz6+oCBMnIJ6A0k24mJM9jedxvFw=",
+  "Source": "GTA.Razor",
+  "BasePath": "_content/GTA.Razor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GTA.Razor\\wwwroot",
+      "Source": "GTA.Razor",
+      "ContentRoot": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\",
+      "BasePath": "_content/GTA.Razor",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\background.png",
+      "SourceId": "GTA.Razor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\",
+      "BasePath": "_content/GTA.Razor",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\facebook.html",
+      "SourceId": "GTA.Razor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\",
+      "BasePath": "_content/GTA.Razor",
+      "RelativePath": "facebook.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\facebook.html"
+    },
+    {
+      "Identity": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\Services\\FacebookService.js",
+      "SourceId": "GTA.Razor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor\\wwwroot\\",
+      "BasePath": "_content/GTA.Razor",
+      "RelativePath": "Services/FacebookService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Services\\FacebookService.js"
+    }
+  ]
+}

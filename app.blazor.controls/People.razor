@@ -1,0 +1,29 @@
+﻿@using STA.Data.Client.Controllers;
+@inject STA.Data.Client.Context Context;
+
+<h3>People</h3>
+<span>@search</span>
+
+<input onchange="changed"/>
+<ul>
+    @foreach (var person in people) {
+        <li class="mb-2">
+            <span>@person.FirstName</span> <span>@person.LastName</span>
+        </li>
+    }
+</ul>
+
+@code {
+   private string search = "";
+
+
+    //private Context context = new Context();
+    private IEnumerable<PersonController> people = Enumerable.Empty<PersonController>();
+
+    protected override async Task OnInitializedAsync() {
+        this.people = await this.Context.People.Search("");
+    }
+    public void changed() {
+        
+    }
+}

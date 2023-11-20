@@ -1,0 +1,15 @@
+C:\github.com\sokinsky\golftopia\GTA.Client\bin\Debug\net7.0\GTA.Client.deps.json
+C:\github.com\sokinsky\golftopia\GTA.Client\bin\Debug\net7.0\GTA.Client.dll
+C:\github.com\sokinsky\golftopia\GTA.Client\bin\Debug\net7.0\GTA.Client.pdb
+C:\github.com\sokinsky\golftopia\GTA.Client\bin\Debug\net7.0\GTA.dll
+C:\github.com\sokinsky\golftopia\GTA.Client\bin\Debug\net7.0\GTA.pdb
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.csproj.AssemblyReference.cache
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.AssemblyInfoInputs.cache
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.AssemblyInfo.cs
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.csproj.CoreCompileInputs.cache
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.csproj.CopyComplete
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.dll
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\refint\GTA.Client.dll
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\GTA.Client.pdb
+C:\github.com\sokinsky\golftopia\GTA.Client\obj\Debug\net7.0\ref\GTA.Client.dll

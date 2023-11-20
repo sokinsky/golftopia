@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "XtvrzMKwE2w/HmQae52eiehjEOPXyjT3o1GsgmTgc4A=",
+  "Source": "STA.Razor.Controls",
+  "BasePath": "_content/STA.Razor.Controls",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "STA.Razor.Controls\\wwwroot",
+      "Source": "STA.Razor.Controls",
+      "ContentRoot": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\",
+      "BasePath": "_content/STA.Razor.Controls",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\background.png",
+      "SourceId": "STA.Razor.Controls",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\",
+      "BasePath": "_content/STA.Razor.Controls",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "STA.Razor.Controls",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\github.com\\sokinsky\\sportopia\\STA.Razor.Controls\\wwwroot\\",
+      "BasePath": "_content/STA.Razor.Controls",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}

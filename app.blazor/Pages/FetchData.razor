@@ -1,0 +1,44 @@
+﻿@page "/fetchdata"
+
+<PageTitle>Weather forecast</PageTitle>
+
+@inject GTA.Client.Context Context;
+
+<h1>People</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (people == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in people)
+            {
+                <tr>
+                    <td>@person.ID</td>
+                    <td>@person.FirstName</td>
+                    <td>@person.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private GTA.Data.Models.People[] people = new GTA.Data.Models.People[];
+
+    protected override async Task OnInitializedAsync() {
+
+    }
+}

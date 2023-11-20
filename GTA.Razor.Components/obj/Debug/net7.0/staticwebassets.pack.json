@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor.Components\\Master.razor.js",
+      "PackagePath": "staticwebassets\\Master.razor.js"
+    },
+    {
+      "Id": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GTA.Razor.Components.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GTA.Razor.Components.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor.Components\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\github.com\\sokinsky\\golftopia\\GTA.Razor.Components\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GTA.Razor.Components.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GTA.Razor.Components.props",
+      "PackagePath": "build\\GTA.Razor.Components.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GTA.Razor.Components.props",
+      "PackagePath": "buildMultiTargeting\\GTA.Razor.Components.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GTA.Razor.Components.props",
+      "PackagePath": "buildTransitive\\GTA.Razor.Components.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

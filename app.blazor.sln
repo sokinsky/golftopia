@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32120.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTA.Client", "GTA.Client\GTA.Client.csproj", "{B0D3C960-8251-4BB0-A624-7B94AD77CB65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTA.Client.X", "GTA.Client.X\GTA.Client.X.csproj", "{8A3E0069-D804-4530-82C7-0B070ADBAD9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTA", "GTA\GTA.csproj", "{6961F382-18C6-41FE-97C5-007A54E7FEBB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "site.golftopia.com", "site.golftopia.com\site.golftopia.com.csproj", "{BB0675F3-D68D-4A3D-8CD6-27C7C7A12715}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app.golftopia", "app.golftopia\app.golftopia.csproj", "{C877EC0B-5F56-4D80-8D11-D365AF332ED8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTA.Razor.Components", "GTA.Razor.Components\GTA.Razor.Components.csproj", "{1133132E-7D22-4D67-BA74-6C86532B888C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTA.Razor", "GTA.Razor\GTA.Razor.csproj", "{A348B188-FAEA-44BB-882D-FA8F9128CEA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D3C960-8251-4BB0-A624-7B94AD77CB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D3C960-8251-4BB0-A624-7B94AD77CB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D3C960-8251-4BB0-A624-7B94AD77CB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D3C960-8251-4BB0-A624-7B94AD77CB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3E0069-D804-4530-82C7-0B070ADBAD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3E0069-D804-4530-82C7-0B070ADBAD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3E0069-D804-4530-82C7-0B070ADBAD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3E0069-D804-4530-82C7-0B070ADBAD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6961F382-18C6-41FE-97C5-007A54E7FEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6961F382-18C6-41FE-97C5-007A54E7FEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6961F382-18C6-41FE-97C5-007A54E7FEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6961F382-18C6-41FE-97C5-007A54E7FEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0675F3-D68D-4A3D-8CD6-27C7C7A12715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0675F3-D68D-4A3D-8CD6-27C7C7A12715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0675F3-D68D-4A3D-8CD6-27C7C7A12715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0675F3-D68D-4A3D-8CD6-27C7C7A12715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C877EC0B-5F56-4D80-8D11-D365AF332ED8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1133132E-7D22-4D67-BA74-6C86532B888C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1133132E-7D22-4D67-BA74-6C86532B888C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1133132E-7D22-4D67-BA74-6C86532B888C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1133132E-7D22-4D67-BA74-6C86532B888C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A348B188-FAEA-44BB-882D-FA8F9128CEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A348B188-FAEA-44BB-882D-FA8F9128CEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A348B188-FAEA-44BB-882D-FA8F9128CEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A348B188-FAEA-44BB-882D-FA8F9128CEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D3036DF-30B9-4923-A26F-4ED31964F4BF}
+	EndGlobalSection
+EndGlobal

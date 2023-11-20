@@ -1,0 +1,36 @@
+﻿@page "/login"
+@inherits LoginBase
+
+<div class="row">
+    <div class="col">
+        <form>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sign in</h5>
+                    <h6 class="card-subtitle mb-5">to your account</h6>
+                    <div class="card-text">
+                        <div class="row position-static">
+                            <div class="col mb-2">
+                                <input type="text" class="form-control" placeholder="Username" @bind="form.Username">
+                            </div>
+                        </div>
+                        <div class="row position-static">
+                            <div class="col mb-2">
+                                <input type="password" class="form-control" placeholder="Password" @bind="form.Password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-right">
+                                <a class="btn btn-block btn-primary" @onclick="login">
+                                    <span>Login</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
