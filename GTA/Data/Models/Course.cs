@@ -10,41 +10,50 @@ using System.Text.Json;
 using Microsoft.Identity.Client;
 
 namespace GTA.Data.Models {
-    public class Club : Venue {
+    public class Course : Model {
+        public string Name { get; set; } = default!;
+        public int? PhoneID { get; set; }
+        public virtual Phone? Phone { get; set; }
+        public int? AddressID { get; set; }
+        public virtual Address? Address { get; set; }
+
+        public virtual ICollection<TeeBox> TeeBoxes { get; set; } = default!;
+    }
+    public class TeeBox : Model {
+        public string Name { get; set; } = default!;
+        public int CourseID { get; set; }
+        public virtual Course Course { get; set; } = default!;
 
     }
-    public class Course : Venue {       
-        [Column("Tees")]
-        public string json_Tees { get; set; } = "[]";
-        [NotMapped]
-        public Tee[] Tees {
-            get {
-                var result = JsonSerializer.Deserialize<Tee[]>(this.json_Tees);
-                if (result == null)
-                    return new Tee[] { };
-                return result;
-            }
-            set {
-                this.json_Tees = JsonSerializer.Serialize(value);
-            }
-        }
+    public class Hole : Model {
+        public int Number { get; set; }
+        public int Par { get; set; }
+        public int Index { get; set; }
+        public int Yards { get; set; }
 
-        public class Tee {
-            public string Name { get; set; } = default!;
-            public string Color { get; set; } = default!;
-            public int Slope { get; set; }
-            public float Rating { get; set; }
-            public Hole[] Holes { get; set; } = new Hole[] { };
-            public class Hole {
-                public int Number { get; set; }
-                public int Par { get; set; }
-                public int Index { get; set; }
-                public int Distance { get; set; }
-            }
-        }
+        public int TeeBoxID { get; set; }
+        public virtual TeeBox TeeBox { get; set; } = default!;
+        
+    }
 
-        public new class Configuration : IEntityTypeConfiguration<Course> {
-            public void Configure(EntityTypeBuilder<Course> builder) { }
-        }
+    public class ScoreCard : Model {
+        public int PersonID { get; set; }
+        public virtual Person Person { get; set; } = default!;
+
+        public int CourseID { get; set; }
+        public virtual Course Course { get; set; } = default!;
+
+        public virtual ICollection<ScoreCardHole> Holes { get; set; } = default!;
+
+
+    }
+    public class ScoreCardHole : Model {
+        public int ScoreCordID { get; set; }
+        public virtual ScoreCard ScoreCard { get; set; } = default!;
+
+        public int HoleID { get; set; }
+        public virtual Hole Hole { get; set; } = default!;
+
+        public int Score { get; set; }
     }
 }

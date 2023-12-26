@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GTA.Data.Models {
     public class Person : Model {
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
-
-
 
 
         public class Configuration : IEntityTypeConfiguration<Person> {
@@ -25,5 +25,13 @@ namespace GTA.Data.Models {
             }
         }
     }
+
+    public class Player : Model {
+        [Key, ForeignKey(nameof(Person))]
+        public override int ID { get; set; }
+        public virtual Person Person { get; set; } = default!;
+
+    }
+
 
 }

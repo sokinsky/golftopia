@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace GTA.Server.Migrations
 {
     /// <inheritdoc />
@@ -209,6 +211,39 @@ namespace GTA.Server.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Venue",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ParentID = table.Column<int>(type: "int", nullable: true),
+                    AddressID = table.Column<int>(type: "int", nullable: true),
+                    PhoneID = table.Column<int>(type: "int", nullable: true),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Tees = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Venue", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Venue_Addresses_AddressID",
+                        column: x => x.AddressID,
+                        principalTable: "Addresses",
+                        principalColumn: "ID");
+                    table.ForeignKey(
+                        name: "FK_Venue_Phones_PhoneID",
+                        column: x => x.PhoneID,
+                        principalTable: "Phones",
+                        principalColumn: "ID");
+                    table.ForeignKey(
+                        name: "FK_Venue_Venue_ParentID",
+                        column: x => x.ParentID,
+                        principalTable: "Venue",
+                        principalColumn: "ID");
+                });
+
             migrationBuilder.InsertData(
                 table: "Emails",
                 columns: new[] { "ID", "Address" },
@@ -217,7 +252,17 @@ namespace GTA.Server.Migrations
             migrationBuilder.InsertData(
                 table: "People",
                 columns: new[] { "ID", "FirstName", "LastName" },
-                values: new object[] { 1, "Steve", "Okinsky" });
+                values: new object[,]
+                {
+                    { 1, "Steve", "Okinsky" },
+                    { 2, "David", "Okinsky" },
+                    { 3, "Nathan", "Pannell" },
+                    { 4, "Bob", "Souls" },
+                    { 5, "Ryan", "Wheeler" },
+                    { 6, "Mathew", "Hess" },
+                    { 7, "Brian", "Corr" },
+                    { 8, "Danny", "Martel" }
+                });
 
             migrationBuilder.InsertData(
                 table: "States",
@@ -232,7 +277,7 @@ namespace GTA.Server.Migrations
             migrationBuilder.InsertData(
                 table: "PeopleEmails",
                 columns: new[] { "ID", "Code", "EmailID", "PersonID", "Verified" },
-                values: new object[] { 1, "647ffe78-95c4-4407-8d86-e8454a595859", 1, 1, null });
+                values: new object[] { 1, "0e5b2946-a7ab-417f-9798-4742bbe2667c", 1, 1, null });
 
             migrationBuilder.InsertData(
                 table: "Users",
@@ -268,14 +313,26 @@ namespace GTA.Server.Migrations
                 name: "IX_PeoplePhones_PhoneID",
                 table: "PeoplePhones",
                 column: "PhoneID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Venue_AddressID",
+                table: "Venue",
+                column: "AddressID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Venue_ParentID",
+                table: "Venue",
+                column: "ParentID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Venue_PhoneID",
+                table: "Venue",
+                column: "PhoneID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Addresses");
-
             migrationBuilder.DropTable(
                 name: "Logins");
 
@@ -286,7 +343,7 @@ namespace GTA.Server.Migrations
                 name: "PeoplePhones");
 
             migrationBuilder.DropTable(
-                name: "Cities");
+                name: "Venue");
 
             migrationBuilder.DropTable(
                 name: "Users");
@@ -295,13 +352,19 @@ namespace GTA.Server.Migrations
                 name: "Emails");
 
             migrationBuilder.DropTable(
+                name: "Addresses");
+
+            migrationBuilder.DropTable(
                 name: "Phones");
 
             migrationBuilder.DropTable(
-                name: "States");
+                name: "People");
 
             migrationBuilder.DropTable(
-                name: "People");
+                name: "Cities");
+
+            migrationBuilder.DropTable(
+                name: "States");
         }
     }
 }

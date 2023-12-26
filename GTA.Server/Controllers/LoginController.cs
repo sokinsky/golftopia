@@ -10,6 +10,7 @@ namespace GTA.Server.Controllers {
     public class LoginController : Controller<Login> {
         public LoginController(Context context, Login login) : base(context, login){ }
 
+        public UserController User => new UserController(this.Context, this.Model.User);
 
     }
 }

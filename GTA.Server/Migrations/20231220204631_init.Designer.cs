@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GTA.Server.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230831171651_courses")]
-    partial class courses
+    [Migration("20231220204631_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,38 +94,6 @@ namespace GTA.Server.Migrations
                             Name = "Virginia Beach",
                             StateID = 1
                         });
-                });
-
-            modelBuilder.Entity("GTA.Data.Models.Course", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("AddressID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PhoneID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("json_Tees")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Tees");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("AddressID");
-
-                    b.HasIndex("PhoneID");
-
-                    b.ToTable("Courses");
                 });
 
             modelBuilder.Entity("GTA.Data.Models.Email", b =>
@@ -286,7 +254,7 @@ namespace GTA.Server.Migrations
                         new
                         {
                             ID = 1,
-                            Code = "5f8b0d33-c736-4bbf-a504-b0fdb2591543",
+                            Code = "0e5b2946-a7ab-417f-9798-4742bbe2667c",
                             EmailID = 1,
                             PersonID = 1
                         });
@@ -399,6 +367,58 @@ namespace GTA.Server.Migrations
                         });
                 });
 
+            modelBuilder.Entity("GTA.Data.Models.Venue", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int?>("AddressID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ParentID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PhoneID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("AddressID");
+
+                    b.HasIndex("ParentID");
+
+                    b.HasIndex("PhoneID");
+
+                    b.ToTable("Venue");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Venue");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("GTA.Data.Models.Course", b =>
+                {
+                    b.HasBaseType("GTA.Data.Models.Venue");
+
+                    b.Property<string>("json_Tees")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Tees");
+
+                    b.HasDiscriminator().HasValue("Course");
+                });
+
             modelBuilder.Entity("GTA.Data.Models.Address", b =>
                 {
                     b.HasOne("GTA.Data.Models.City", "City")
@@ -419,25 +439,6 @@ namespace GTA.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("State");
-                });
-
-            modelBuilder.Entity("GTA.Data.Models.Course", b =>
-                {
-                    b.HasOne("GTA.Data.Models.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GTA.Data.Models.Phone", "Phone")
-                        .WithMany()
-                        .HasForeignKey("PhoneID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Address");
-
-                    b.Navigation("Phone");
                 });
 
             modelBuilder.Entity("GTA.Data.Models.Login", b =>
@@ -498,6 +499,27 @@ namespace GTA.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("Person");
+                });
+
+            modelBuilder.Entity("GTA.Data.Models.Venue", b =>
+                {
+                    b.HasOne("GTA.Data.Models.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressID");
+
+                    b.HasOne("GTA.Data.Models.Venue", "Parent")
+                        .WithMany()
+                        .HasForeignKey("ParentID");
+
+                    b.HasOne("GTA.Data.Models.Phone", "Phone")
+                        .WithMany()
+                        .HasForeignKey("PhoneID");
+
+                    b.Navigation("Address");
+
+                    b.Navigation("Parent");
+
+                    b.Navigation("Phone");
                 });
 #pragma warning restore 612, 618
         }

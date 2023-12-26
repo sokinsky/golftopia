@@ -1,5 +1,6 @@
 ﻿using GTA.Data;
 using GTA.Data.Models;
+using GTA.Server.Controllers;
 using GTA.Server.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
@@ -30,7 +31,7 @@ namespace GTA.Server {
             optionsBuilder.UseLazyLoadingProxies();
         }
 
-        protected RepositoryCollection Repositories { get; }
+        public RepositoryCollection Repositories { get; }
         public IRepository<Model, IController<Model>> Repository(string name) {
             return this.Repositories.Get(name);
         }
@@ -38,13 +39,21 @@ namespace GTA.Server {
             return this.Repositories.Get<TModel>();
         }
 
+        public LoginController? Login { get; set; }
+        public UserController? User => this.Login?.User;
+
         [Repository(typeof(PersonRepository))] public DbSet<Person> People { get; set; } = default!;
         [Repository(typeof(UserRepository))] public DbSet<User> Users { get; set; } = default!;
         [Repository(typeof(LoginRepository))] public DbSet<Login> Logins { get; set; } = default!;
-
         [Repository(typeof(CourseRepository))] public DbSet<Course> Courses { get; set; } = default!;
 
+        public DbSet<TeeBox> TeeBoxes { get; set; } = default!;
+        public DbSet<Hole> Holes { get; set; } = default!;
+
         public DbSet<Email> Emails { get; set; } = default!;
+
+        public DbSet<Group> Groups { get; set; } = default!;
+        public DbSet<GroupPerson> GroupPeople { get; set; } = default!;
         public DbSet<PersonEmail> PeopleEmails { get; set; } = default!;
         public DbSet<Phone> Phones { get; set; } = default!;
         public DbSet<PersonPhone> PeoplePhones { get; set; } = default!;
@@ -52,6 +61,8 @@ namespace GTA.Server {
         public DbSet<Address> Addresses { get; set; } = default!;
         public DbSet<City> Cities { get; set; } = default!;
         public DbSet<State> States { get; set; } = default!;
+
+
 
         [Web.Method]
         public object Test() {
@@ -67,6 +78,7 @@ namespace GTA.Server {
         public RepositoryCollection(Context context) { this.context = context; }
         protected Context context { get; }
 
+        public LoginRepository Logins => (LoginRepository)this.Get<Login>();
         public PersonRepository People => (PersonRepository)this.Get<Person>();
 
 

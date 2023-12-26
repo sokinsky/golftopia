@@ -1,5 +1,6 @@
 ﻿using Azure.Identity;
 using GTA.Data.Models;
+using GTA.Server.Controllers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace GTA.Server.Repositories {
             };
             this.Context.Logins.Add(loginModel);
             await this.Context.SaveChangesAsync();
-            return new Controller<Login>(this.Context, loginModel);
+            return new LoginController(this.Context, loginModel);
         }
 
         [Web.Method]
